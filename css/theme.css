@@ -14104,20 +14104,7 @@ figure.woocommerce-product-gallery__wrapper {
   display: block;
 }
 
-.menu ul {
-  display: inline;
-  margin: 0;
-  padding: 0;
-}
-
-/* Global container */
-.container {
-  text-align: left;
-  margin-top: 0;
-}
-
-/* Header */
-.navbar-header {
+.header .navbar-header {
   height: 70px;
   background: #2b2b2b;
   color: #ffffff;
@@ -14126,66 +14113,64 @@ figure.woocommerce-product-gallery__wrapper {
   border-bottom: #fff53f 2px solid;
   padding-bottom: 10px;
 }
-
-.navbar-nav {
+.header .navbar-header .navbar-nav {
   margin: auto;
   width: 800px;
   text-align: center;
   margin-top: 0px;
 }
-
-.menu a {
+.header .navbar-header .navbar-nav .container {
+  text-align: left;
+  margin-top: 0;
+}
+.header .navbar-header .navbar-nav .container .menu ul {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+.header .navbar-header .navbar-nav .container .menu a {
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 16px;
 }
-
-.menu li a:hover {
+.header .navbar-header .navbar-nav .container .menu li a:hover {
   color: grey;
 }
-
-.menu .current a {
+.header .navbar-header .navbar-nav .container .menu .current a {
   color: #fff53f;
 }
-
-.menu li:nth-child(1) {
+.header .navbar-header .navbar-nav .container .menu li:nth-child(1) {
   float: left;
   display: inline;
   padding: 20px 20px 20px 20px;
 }
-
-.menu li:nth-child(2) {
+.header .navbar-header .navbar-nav .container .menu li:nth-child(2) {
   float: left;
   display: inline;
   padding: 20px 20px 20px 20px;
 }
-
-.menu li:nth-child(3) {
+.header .navbar-header .navbar-nav .container .menu li:nth-child(3) {
   float: left;
   display: inline;
   padding: 20px 20px 20px 20px;
 }
-
-.menu li:nth-child(4) {
+.header .navbar-header .navbar-nav .container .menu li:nth-child(4) {
   float: right;
   display: inline;
   padding: 20px 20px 20px 20px;
 }
-
-.menu li:nth-child(5) {
+.header .navbar-header .navbar-nav .container .menu li:nth-child(5) {
   float: right;
   display: inline;
   padding: 20px 20px 20px 20px;
 }
-
-.menu li:nth-child(6) {
+.header .navbar-header .navbar-nav .container .menu li:nth-child(6) {
   float: right;
   display: inline;
   padding: 20px 20px 20px 20px;
 }
-
-.navbar-brand img {
+.header .navbar-header .navbar-nav .container .navbar-brand img {
   display: inline-block;
   overflow: visible;
   transform: translateY(-15%);
@@ -14193,8 +14178,7 @@ figure.woocommerce-product-gallery__wrapper {
   position: no-repeat;
   height: 150px;
 }
-
-.img-fluid img {
+.header .navbar-header .navbar-nav .container .img-fluid img {
   display: inline-block;
   overflow: visible;
   transform: translateY(-15%);
