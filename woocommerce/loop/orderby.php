@@ -11,8 +11,9 @@
  * the readme will list any important changes.
  *
  * @see 	    https://docs.woocommerce.com/document/template-structure/
+ * @author 		WooThemes
  * @package 	WooCommerce/Templates
- * @version     3.6.1
+ * @version     3.3.0
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -21,7 +22,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 ?>
 <form class="woocommerce-ordering" method="get">
-	<select name="orderby" class="orderby custom-select" aria-label="<?php esc_attr_e( 'Shop order', 'understrap' ); ?>">
+	<select name="orderby" class="orderby custom-select">
 		<?php foreach ( $catalog_orderby_options as $id => $name ) : ?>
 			<option value="<?php echo esc_attr( $id ); ?>" <?php selected( $orderby, $id ); ?>><?php echo esc_html( $name ); ?></option>
 		<?php endforeach; ?>
