@@ -14107,7 +14107,7 @@ figure.woocommerce-product-gallery__wrapper {
 .header .navbar-header {
   height: 70px;
   background: #2b2b2b;
-  color: #ffffff;
+  color: #fff;
   padding-top: 0;
   min-height: 70px;
   border-bottom: #fff53f 2px solid;
@@ -14129,7 +14129,7 @@ figure.woocommerce-product-gallery__wrapper {
   padding: 0;
 }
 .header .navbar-header .navbar-nav .container .menu a {
-  color: #ffffff;
+  color: #fff;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 16px;
