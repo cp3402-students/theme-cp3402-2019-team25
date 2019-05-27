@@ -24,9 +24,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <body <?php body_class(); ?>>
 <div class="header" id="stickyHeader" itemscope itemtype="http://schema.org/WebSite">
-	<header class="navbar-header">
+	<header>
 		<div class="container">
-			<nav class="navbar-nav ">
+			<nav>
 					<!-- The WordPress Menu goes here -->
 					<?php wp_nav_menu(
 						array(

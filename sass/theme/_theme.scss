@@ -1,5 +1,5 @@
 .header{
-  .navbar-header {
+  header {
       height: 70px;
       background: $primary;
       color: $white;
@@ -8,59 +8,59 @@
       border-bottom: $border-yellow 2px solid;
       padding-bottom: 10px;
       .container{
-      //    width: 80%;
-      //    margin: auto; /*Sets the content to be in the middle, like float, but not  like text-align. */
-      //    overflow: hidden;
+          width: 80%;
+          margin: auto; /*Sets the content to be in the middle, like float, but not  like text-align. */
+          overflow: hidden;
           text-align: left;
           margin-top: 0;
-          .navbar-nav {
+          nav {
               margin:auto;
-              width: 800px;;
+              width: 100%;
               text-align: center;
               margin-top: 0px;
-              .menu ul{
+              ul{
                   display: inline;
                   margin: 0;
                   padding: 0;
               }
-              .menu a{
+              a{
                   color: $white;
                   text-decoration: none;
                   text-transform: uppercase;
                   font-size: 16px;
               }
-              .menu li a:hover{
+              li a:hover{
                   color: grey;
               }
-              .menu .current a{
+              .current-menu-item a{
                   color: $border-yellow;
               }
-              .menu li:nth-child(1){
+              li:nth-child(1){
                   float: left;
                   display:  inline;
                   padding:20px 20px 20px 20px;
               }
-              .menu li:nth-child(2){
+              li:nth-child(2){
                   float: left;
                   display:  inline;
                   padding:20px 20px 20px 20px;
               }
-              .menu li:nth-child(3){
+              li:nth-child(3){
                   float: left;
                   display:  inline;
                   padding:20px 20px 20px 20px;
               }
-              .menu li:nth-child(4){
+              li:nth-child(4){
                   float: right;
                   display:  inline;
                   padding:20px 20px 20px 20px;
               }
-              .menu li:nth-child(5){
+              li:nth-child(5){
                   float: right;
                   display:  inline;
                   padding:20px 20px 20px 20px;
               }
-              .menu li:nth-child(6){
+              li:nth-child(6){
                   float: right;
                   display:  inline;
                   padding:20px 20px 20px 20px;
@@ -73,16 +73,8 @@
                   position:no-repeat;
                   height: 150px;
               }
-              .img-fluid img{
-                  display: inline-block;
-                  overflow: visible;
-                  transform: translateY(-15%);
-                  margin: 0;
-                  position:no-repeat;
-                  height: 150px;
-              }
           }
-      }      
+      }
   }
 }
 
@@ -127,4 +119,111 @@ body::after {
 
 .entry-header nav {
 
+}
+
+#showcase{
+    margin: 0;
+    color: $white;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#showcase h2{
+    margin: 80px 0 0 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:  $white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-variant: small-caps;
+    font-size: 62px;
+}
+
+#showcase h1{
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;
+    font-weight: 500;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+#showcase p{
+    margin: 0;
+    font-size: 22px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    padding: 0 40px 0 40px;
+}
+
+#content{
+    font-size: 16px;
+    color: $primary;
+    background-color: $cream;
+    background-size: 70%;
+    padding-top:30px 60px 30px 60px;
+    border-top: $border-yellow solid 2px;
+    margin: auto;
+    width: auto;
+}
+
+
+#content img{
+    float: right;
+    width: 500px;
+    overflow: visible;
+    padding: 30px 30px 30px 30px
+}
+
+#content h3{
+    padding-top: 30px;
+    font-size: 38px;
+}
+
+#content p{
+    font-size: 20px;
+    margin: 0;
+    line-height: 1.5;
+}
+
+
+#info{
+    margin-bottom: 0;
+    font-size: 16px;
+    color: $primary;
+    background-color: $cream;
+    background-size: 70%;
+    padding-top:30px 60px 30px 60px;
+    align-content: center;
+    border-top: $border-yellow solid 2px;
+}
+
+#info .container{
+    width: 40%;
+    text-align: center;
+}
+
+#poster{
+    margin: auto;
+    width: auto;
+    background-color: $primary;
+    border-top: $border-yellow solid 2px;
+}
+
+#poster .box{
+    float:left;
+    width: 30%;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#poster .box img{
+    width: 250px;
+}
+
+
+/* Global Footer */
+footer{
+    border-top: $border-yellow solid 2px;
+    padding-top: 20px;
+    color: $white;
+    background-color: $primary;
+    text-align: center;
 }
