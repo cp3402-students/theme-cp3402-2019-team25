@@ -25,21 +25,22 @@ $container = get_theme_mod( 'understrap_container_type' );
 <body <?php body_class(); ?>>
 <div class="header" id="stickyHeader" itemscope itemtype="http://schema.org/WebSite">
 	<header class="navbar-header">
-		<nav class="navbar-nav ">
-			<div class="container">
-				<!-- The WordPress Menu goes here -->
-				<?php wp_nav_menu(
-					array(
-						'theme_location'  => 'primary',
-						'fallback_cb'     => '',
-						'depth'           => 2,
-						'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
-					)
-				);
-				the_custom_logo();
-				?><!-- end custom logo -->
-			</div>
-		</nav>
+		<div class="container">
+			<nav class="navbar-nav ">
+					<!-- The WordPress Menu goes here -->
+					<?php wp_nav_menu(
+						array(
+							'theme_location'  => 'primary',
+							'container' 			=> false,
+							'fallback_cb'     => '',
+							'link_after'			=> the_custom_logo(),
+							'depth'           => 2,
+							'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
+						)
+					);
+					?><!-- end custom logo -->
+			</nav>
+		</div>
 	</header>
 </div>
 <div class="site" id="page">

@@ -7,17 +7,17 @@
       min-height: 70px;
       border-bottom: $border-yellow 2px solid;
       padding-bottom: 10px;
-      .navbar-nav {
-          margin:auto;
-          width: 800px;;
-          text-align: center;
-          margin-top: 0px;
-          .container{
-          //    width: 80%;
-          //    margin: auto; /*Sets the content to be in the middle, like float, but not  like text-align. */
-          //    overflow: hidden;
-              text-align: left;
-              margin-top: 0;
+      .container{
+      //    width: 80%;
+      //    margin: auto; /*Sets the content to be in the middle, like float, but not  like text-align. */
+      //    overflow: hidden;
+          text-align: left;
+          margin-top: 0;
+          .navbar-nav {
+              margin:auto;
+              width: 800px;;
+              text-align: center;
+              margin-top: 0px;
               .menu ul{
                   display: inline;
                   margin: 0;
@@ -82,7 +82,7 @@
                   height: 150px;
               }
           }
-      }
+      }      
   }
 }
 
