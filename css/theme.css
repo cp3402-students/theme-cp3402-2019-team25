@@ -14104,11 +14104,15 @@ figure.woocommerce-product-gallery__wrapper {
   display: block;
 }
 
+.header {
+  transform: translate(0%, 0%);
+  transform-origin: center center;
+}
 .header header {
   height: 70px;
   background: #2b2b2b;
   color: #fff;
-  padding-top: 0;
+  padding-top: 0px;
   min-height: 70px;
   border-bottom: #fff53f 2px solid;
   padding-bottom: 10px;
@@ -14147,32 +14151,32 @@ figure.woocommerce-product-gallery__wrapper {
 .header header .container nav li:nth-child(1) {
   float: left;
   display: inline;
-  padding: 20px 20px 20px 20px;
+  padding: 2% 2% 2% 2%;
 }
 .header header .container nav li:nth-child(2) {
   float: left;
   display: inline;
-  padding: 20px 20px 20px 20px;
+  padding: 2% 2% 2% 2%;
 }
 .header header .container nav li:nth-child(3) {
   float: left;
   display: inline;
-  padding: 20px 20px 20px 20px;
+  padding: 2% 2% 2% 2%;
 }
 .header header .container nav li:nth-child(4) {
   float: right;
   display: inline;
-  padding: 20px 20px 20px 20px;
+  padding: 2% 2% 2% 2%;
 }
 .header header .container nav li:nth-child(5) {
   float: right;
   display: inline;
-  padding: 20px 20px 20px 20px;
+  padding: 2% 2% 2% 2%;
 }
 .header header .container nav li:nth-child(6) {
   float: right;
   display: inline;
-  padding: 20px 20px 20px 20px;
+  padding: 20% 20% 20% 20%;
 }
 .header header .container nav .navbar-brand img {
   display: inline-block;
