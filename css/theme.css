@@ -14114,10 +14114,8 @@ figure.woocommerce-product-gallery__wrapper {
   color: #fff;
   padding-top: 0px;
   border-bottom: #fff53f 2px solid;
-  padding-bottom: 10px;
 }
 .header header .container {
-  width: 80%;
   margin: auto;
   /*Sets the content to be in the middle, like float, but not  like text-align. */
   overflow: hidden;
@@ -14142,7 +14140,9 @@ figure.woocommerce-product-gallery__wrapper {
   font-size: 1em;
 }
 .header header .container nav li {
-  padding: 2% 2% 2% 2%;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-top: 2%;
   display: inline;
 }
 .header header .container nav li a:hover {
@@ -14169,10 +14169,12 @@ figure.woocommerce-product-gallery__wrapper {
 .header header .container nav li:nth-child(6) {
   float: right;
 }
+.header header .container nav .navbar-brand a {
+  transform: translate(25%, -15%);
+}
 .header header .container nav .navbar-brand img {
   display: inline-block;
   overflow: visible;
-  transform: translateY(-15%);
   margin: 0;
   position: no-repeat;
   height: 15vh;
@@ -14202,7 +14204,7 @@ body {
 
 body::after {
   content: "";
-  background: url(../img/aroma-aromatic-beans-531754.jpg) no-repeat;
+  background: url(http://192.168.33.10/wp-content/uploads/2019/05/pasted-image-20.jpeg) no-repeat;
   background-size: 120%;
   background-position-x: 100%;
   opacity: 0.4;
@@ -14246,8 +14248,13 @@ body::after {
   padding: 0 40px 0 40px;
 }
 
+<<<<<<< HEAD
 #content, #staff, #our_history {
   font-size: 16px;
+=======
+#content {
+  font-size: 1em;
+>>>>>>> c7e6dda824c611d7be4d46631dfe33e5fdd68938
   color: #2b2b2b;
   background-color: #f2f1ea;
   background-size: 70%;
@@ -14284,9 +14291,6 @@ body::after {
   padding-top: 30px 60px 30px 60px;
   align-content: center;
   border-top: #fff53f solid 2px;
-}
-
-#info .container {
   width: 40%;
   text-align: center;
 }
@@ -14298,16 +14302,20 @@ body::after {
   border-top: #fff53f solid 2px;
 }
 
-#poster .box {
+#poster img {
   float: left;
   width: 30%;
   text-align: center;
   padding-top: 20px;
   padding-bottom: 20px;
+  width: 250px;
 }
 
-#poster .box img {
-  width: 250px;
+.showcase-container, .content-container, .poster-container, .info-container {
+  width: 80%;
+  margin: auto;
+  /*Sets the content to be in the middle, like float, but not  like text-align. */
+  overflow: hidden;
 }
 
 /* Global Footer */
