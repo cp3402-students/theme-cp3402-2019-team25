@@ -13,24 +13,24 @@ $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
 <section id="showcase">
+  <?php if( get_field('showcase')): ?>
+    <?php the_field('showcase'); ?>
+  <?php endif; ?>
 </section>
 <section id="content">
-  <?php while ( have_posts() ) : the_post(); ?>
-
-    <?php get_template_part( 'loop-templates/content', 'page' ); ?>
-
-    <?php
-    // If comments are open or we have at least one comment, load up the comment template.
-    if ( comments_open() || get_comments_number() ) :
-      comments_template();
-    endif;
-    ?>
-
-  <?php endwhile; // end of the loop. ?>
+  <?php if( get_field('content')): ?>
+    <?php the_field('content'); ?>
+  <?php endif; ?>
 </section>
 <section id="poster">
+  <?php if( get_field('poster')): ?>
+    <?php the_field('poster'); ?>
+  <?php endif; ?>
 </section>
 <section id="info">
+  <?php if( get_field('info')): ?>
+    <?php the_field('info'); ?>
+  <?php endif; ?>
 </section>
 
 <?php get_footer(); ?>
