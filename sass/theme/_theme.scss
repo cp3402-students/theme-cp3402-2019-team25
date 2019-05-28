@@ -108,6 +108,7 @@ body::after {
     right: 0;
     position: absolute;
     z-index: -1;
+	background-color: $cream;
   }
 
 .entry-header nav {
@@ -219,4 +220,23 @@ footer{
     color: $white;
     background-color: $primary;
     text-align: center;
+}
+
+/* About us Styling */
+#about_us{
+	@extend #showcase;
+	padding-top: 5%;
+	color: $white;
+}
+
+#our_history{
+	@extend #content;
+	background-color: $primary;
+	color: $white;
+	border-top: $border-yellow solid 2px;
+	border-bottom: $border-yellow solid 2px;
+}
+
+#staff{
+	@extend #content;
 }

@@ -14212,16 +14212,17 @@ body::after {
   right: 0;
   position: absolute;
   z-index: -1;
+  background-color: #f2f1ea;
 }
 
-#showcase {
+#showcase, #about_us {
   margin: 0;
   color: #fff;
   text-align: center;
   padding-bottom: 20px;
 }
 
-#showcase h2 {
+#showcase h2, #about_us h2 {
   margin: 80px 0 0 0;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   color: #fff;
@@ -14230,7 +14231,7 @@ body::after {
   font-size: 62px;
 }
 
-#showcase h1 {
+#showcase h1, #about_us h1 {
   margin: 0;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: 40px;
@@ -14238,14 +14239,14 @@ body::after {
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
-#showcase p {
+#showcase p, #about_us p {
   margin: 0;
   font-size: 22px;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   padding: 0 40px 0 40px;
 }
 
-#content {
+#content, #staff, #our_history {
   font-size: 16px;
   color: #2b2b2b;
   background-color: #f2f1ea;
@@ -14256,19 +14257,19 @@ body::after {
   width: auto;
 }
 
-#content img {
+#content img, #staff img, #our_history img {
   float: right;
   width: 500px;
   overflow: visible;
   padding: 30px 30px 30px 30px;
 }
 
-#content h3 {
+#content h3, #staff h3, #our_history h3 {
   padding-top: 30px;
   font-size: 38px;
 }
 
-#content p {
+#content p, #staff p, #our_history p {
   font-size: 20px;
   margin: 0;
   line-height: 1.5;
@@ -14316,6 +14317,19 @@ footer {
   color: #fff;
   background-color: #2b2b2b;
   text-align: center;
+}
+
+/* About us Styling */
+#about_us {
+  padding-top: 5%;
+  color: #fff;
+}
+
+#our_history {
+  background-color: #2b2b2b;
+  color: #fff;
+  border-top: #fff53f solid 2px;
+  border-bottom: #fff53f solid 2px;
 }
 
 /*
