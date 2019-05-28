@@ -238,3 +238,30 @@ footer{
 #staff{
 	@extend #content;
 }
+
+/* Menu Styling */
+#coffee_etc{
+	@extend #content;
+	padding-top: 8%;
+}
+#cold_drinks{
+	@extend #content;
+	border-top: $border-yellow solid 2px;
+}
+#juices{
+	@extend #content;
+}
+#desserts{
+	@extend #content;
+	border-top: $border-yellow solid 2px;
+}
+#breakfast{
+	@extend #content;
+}
+#lunch{
+	@extend #content;
+	border-top: $border-yellow solid 2px;
+}
+#vegetarian{
+	@extend #content;
+}
