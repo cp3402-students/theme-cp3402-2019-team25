@@ -1,9 +1,11 @@
 .header{
+  transform: translate(0%, 0%);
+  transform-origin: center center;
   header {
       height: 70px;
       background: $primary;
       color: $white;
-      padding-top: 0;
+      padding-top: 0px;
       min-height: 70px;
       border-bottom: $border-yellow 2px solid;
       padding-bottom: 10px;
@@ -38,32 +40,32 @@
               li:nth-child(1){
                   float: left;
                   display:  inline;
-                  padding:20px 20px 20px 20px;
+                  padding:2% 2% 2% 2%;
               }
               li:nth-child(2){
                   float: left;
                   display:  inline;
-                  padding:20px 20px 20px 20px;
+                  padding:2% 2% 2% 2%;
               }
               li:nth-child(3){
                   float: left;
                   display:  inline;
-                  padding:20px 20px 20px 20px;
+                  padding:2% 2% 2% 2%;
               }
               li:nth-child(4){
                   float: right;
                   display:  inline;
-                  padding:20px 20px 20px 20px;
+                  padding:2% 2% 2% 2%;
               }
               li:nth-child(5){
                   float: right;
                   display:  inline;
-                  padding:20px 20px 20px 20px;
+                  padding:2% 2% 2% 2%;
               }
               li:nth-child(6){
                   float: right;
                   display:  inline;
-                  padding:20px 20px 20px 20px;
+                  padding:20% 20% 20% 20%;
               }
               .navbar-brand img{
                   display: inline-block;

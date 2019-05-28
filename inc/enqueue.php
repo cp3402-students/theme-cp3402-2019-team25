@@ -27,6 +27,6 @@ if ( ! function_exists( 'understrap_scripts' ) ) {
 			wp_enqueue_script( 'comment-reply' );
 		}
 	}
+	
 } // endif function_exists( 'understrap_scripts' ).
-
 add_action( 'wp_enqueue_scripts', 'understrap_scripts' );
