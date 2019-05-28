@@ -1,1 +1,267 @@
-// This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
+.header{
+  transform: translate(0%, 0%);
+  transform-origin: center center;
+  header {
+      height: 7vh;
+      background: $primary;
+      color: $white;
+      padding-top: 0px;
+      border-bottom: $border-yellow 2px solid;
+      .container{
+          //width: 80%;
+          margin: auto; /*Sets the content to be in the middle, like float, but not  like text-align. */
+          overflow: hidden;
+          text-align: left;
+          margin-top: 0;
+          nav {
+              margin:auto;
+              width: 100%;
+              text-align: center;
+              margin-top: 0px;
+              ul{
+                  display: inline;
+                  margin: 0;
+                  padding: 0;
+              }
+              a{
+                  color: $white;
+                  text-decoration: none;
+                  text-transform: uppercase;
+                  font-size: 1em;
+              }
+              li{
+                padding-left: 2%;
+                padding-right: 2%;
+                padding-top: 2%;
+                display:  inline;
+              }
+              li a:hover{
+                  color: grey;
+              }
+              .current-menu-item a{
+                  color: $border-yellow;
+              }
+              li:nth-child(1){
+                  float: left;
+              }
+              li:nth-child(2){
+                  float: left;
+              }
+              li:nth-child(3){
+                  float: left;
+              }
+              li:nth-child(4){
+                  float: right;
+              }
+              li:nth-child(5){
+                  float: right;
+              }
+              li:nth-child(6){
+                  float: right;
+              }
+              .navbar-brand a{
+                transform: translate(25%, -15%);
+              }
+              .navbar-brand img{
+                  display: inline-block;
+                  overflow: visible;
+                  margin: 0;
+                  position:no-repeat;
+                  height: 15vh;
+              }
+          }
+      }
+  }
+}
+
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 102px;
+}
+
+.bg-primary {
+  background-color: unset !important;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;;
+    //background: #2b2b2b;
+
+}
+
+body::after {
+    content: "";
+    background: url(http://192.168.33.10/wp-content/uploads/2019/05/pasted-image-20.jpeg) no-repeat;
+    background-size: 120%;
+    background-position-x: 100%;
+    opacity: 0.4;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+	background-color: $cream;
+  }
+
+#showcase{
+    margin: 0;
+    color: $white;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#showcase h2{
+    margin: 80px 0 0 0;
+    font-family: $fonts;
+    color:  $white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-variant: small-caps;
+    font-size: 62px;
+}
+
+#showcase h1{
+    margin: 0;
+    font-family: $fonts;
+    font-size: 40px;
+    font-weight: 500;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+#showcase p{
+    margin: 0;
+    font-size: 22px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    padding: 0 40px 0 40px;
+}
+
+#content{
+    font-size: 1em;
+    color: $primary;
+    background-color: $cream;
+    background-size: 70%;
+    padding-top:30px 60px 30px 60px;
+    border-top: $border-yellow solid 2px;
+    margin: auto;
+    width: auto;
+}
+
+#content img{
+    float: right;
+    width: 500px;
+    overflow: visible;
+    padding: 30px 30px 30px 30px
+}
+
+#content h3{
+    padding-top: 30px;
+    font-size: 38px;
+}
+
+#content p{
+    font-size: 20px;
+    margin: 0;
+    line-height: 1.5;
+}
+
+#info{
+    margin-bottom: 0;
+    font-size: 16px;
+    color: $primary;
+    background-color: $cream;
+    background-size: 70%;
+    padding-top:30px 60px 30px 60px;
+    align-content: center;
+    border-top: $border-yellow solid 2px;
+    width: 40%;
+    text-align: center;
+}
+
+#poster{
+    margin: auto;
+    width: auto;
+    background-color: $primary;
+    border-top: $border-yellow solid 2px;
+}
+
+#poster img{
+    float:left;
+    width: 30%;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 250px;
+}
+
+.showcase-container, .content-container, .poster-container, .info-container{
+    width: 80%;
+    margin: auto; /*Sets the content to be in the middle, like float, but not  like text-align. */
+    overflow: hidden;
+}
+
+
+
+/* Global Footer */
+footer{
+    border-top: $border-yellow solid 2px;
+    padding-top: 20px;
+    color: $white;
+    background-color: $primary;
+    text-align: center;
+}
+
+/* About us Styling */
+#about_us{
+	@extend #showcase;
+	padding-top: 5%;
+	color: $white;
+}
+
+#our_history{
+	@extend #content;
+	background-color: $primary;
+	color: $white;
+	border-top: $border-yellow solid 2px;
+	border-bottom: $border-yellow solid 2px;
+}
+
+#staff{
+	@extend #content;
+}
+
+/* Menu Styling */
+#coffee_etc{
+	@extend #content;
+	padding-top: 8%;
+}
+#cold_drinks{
+	@extend #content;
+	border-top: $border-yellow solid 2px;
+}
+#juices{
+	@extend #content;
+}
+#desserts{
+	@extend #content;
+	border-top: $border-yellow solid 2px;
+}
+#breakfast{
+	@extend #content;
+}
+#lunch{
+	@extend #content;
+	border-top: $border-yellow solid 2px;
+}
+#vegetarian{
+	@extend #content;
+}

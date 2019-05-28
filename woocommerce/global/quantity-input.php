@@ -12,7 +12,7 @@
  *
  * @see     https://docs.woocommerce.com/document/template-structure/
  * @package WooCommerce/Templates
- * @version 3.6.1
+ * @version 3.4.0
  */
 
 defined( 'ABSPATH' ) || exit;
@@ -25,10 +25,10 @@ if ( $max_value && $min_value === $max_value ) {
 	<?php
 } else {
 	/* translators: %s: Quantity. */
-	$label = ! empty( $args['product_name'] ) ? sprintf( __( '%s quantity', 'understrap' ), wp_strip_all_tags( $args['product_name'] ) ) : __( 'Quantity', 'understrap' );
+	$labelledby = ! empty( $args['product_name'] ) ? sprintf( __( '%s quantity', 'understrap' ), strip_tags( $args['product_name'] ) ) : '';
 	?>
 	<div class="quantity">
-		<label class="sr-only" for="<?php echo esc_attr( $input_id ); ?>"><?php echo esc_attr( $label ); ?></label>
+		<label class="sr-only" for="<?php echo esc_attr( $input_id ); ?>"><?php esc_html_e( 'Quantity', 'understrap' ); ?></label>
 		<input
 			type="number"
 			id="<?php echo esc_attr( $input_id ); ?>"
@@ -40,7 +40,9 @@ if ( $max_value && $min_value === $max_value ) {
 			value="<?php echo esc_attr( $input_value ); ?>"
 			title="<?php echo esc_attr_x( 'Qty', 'Product quantity input tooltip', 'understrap' ); ?>"
 			size="4"
-			inputmode="<?php echo esc_attr( $inputmode ); ?>" />
+			pattern="<?php echo esc_attr( $pattern ); ?>"
+			inputmode="<?php echo esc_attr( $inputmode ); ?>"
+			aria-labelledby="<?php echo esc_attr( $labelledby ); ?>" />
 	</div>
 	<?php
 }
