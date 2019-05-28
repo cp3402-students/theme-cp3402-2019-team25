@@ -13,24 +13,32 @@ $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
 <section id="showcase">
-  <?php if( get_field('showcase')): ?>
-    <?php the_field('showcase'); ?>
-  <?php endif; ?>
+	<div class="showcase-container">
+	  <?php if( get_field('showcase')): ?>
+	    <?php the_field('showcase'); ?>
+	  <?php endif; ?>
+	</div>
 </section>
 <section id="content">
-  <?php if( get_field('content')): ?>
-    <?php the_field('content'); ?>
-  <?php endif; ?>
+	<div class="content-container">
+	  <?php if( get_field('content')): ?>
+	    <?php the_field('content'); ?>
+	  <?php endif; ?>
+	</div>
 </section>
 <section id="poster">
-  <?php if( get_field('poster')): ?>
-    <?php the_field('poster'); ?>
-  <?php endif; ?>
+	<div class="poster-container">
+	  <?php if( get_field('poster')): ?>
+	    <?php the_field('poster'); ?>
+	  <?php endif; ?>
+	</div>
 </section>
 <section id="info">
-  <?php if( get_field('info')): ?>
-    <?php the_field('info'); ?>
-  <?php endif; ?>
+	<div class="info-container">
+	  <?php if( get_field('info')): ?>
+	    <?php the_field('info'); ?>
+	  <?php endif; ?>
+	</div>
 </section>
 
 <?php get_footer(); ?>
