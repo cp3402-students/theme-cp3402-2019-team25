@@ -23,7 +23,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 </head>
 
 <body <?php body_class(); ?>>
-<div class="header" id="stickyHeader" itemscope itemtype="http://schema.org/WebSite">
+<div class="header sticky" itemscope itemtype="http://schema.org/WebSite">
 	<header>
 		<div class="container">
 			<nav>
